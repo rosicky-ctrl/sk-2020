@@ -38,8 +38,8 @@ Polecenie
 * ping - najprostsza metoda sprawdzenia czy host po drugiej stronie odpowie, czy jest komunikacja, polaczenie miedzy dwiema maszynami
 * python3 server.py / python3 client.py 9999 - odpalenie na jednym PC serwera, na drugim klienta z portem 9999
 
-Efekt
-PCty w tej samej sieci, ta sama maska, połączenie za pomocą ping i server-client działa.
+Efekt:
+* PCty w tej samej sieci, ta sama maska, połączenie za pomocą ping i server-client działa.
 
 Statyczna konfiguracja parametrów połączenia
 Wejściowe parametry sieci
@@ -57,7 +57,7 @@ Wejściowe parametry sieci
 | IP - address  | 172.16.100.100 | ip addr add 172.16.100.100/16 |
 | MASKA  | 255.255.0.0 | 8+8=16 |
 
-Polecenie ping działa między PC1 a PC2, jeżeli pingujemy adres 1, tj. 192.168.10.11, zatem maska nie miała na to wpływu. Natomiast w przypadku połączenia z drugim adresem, 172... "Network unreachable".
+Polecenie ping działa między PC1 a PC2, jeżeli pingujemy adres 1, tj. 192.168.10.11, zatem maska nie miała na to wpływu. Natomiast w przypadku połączenia z drugim adresem, 172... "Network unreachable". Zgaduję, że do połączenie będzie potrzebny routing.
 
 
 Nowa statyczna konfiguracja 
@@ -85,7 +85,10 @@ Efekt
 
 ### Utrwalenie konfiguracji
 
-Dlaczego? Jak? Co? :)
+* Pamiętać o podłączeniu do jednej sieci Lan
+* Ustawienie adresów za pomocą ip addr add adres/maska dev eth0/1/..
+* Sprawdzenie połączenia za pomocą ping
+* PCty muszą znajdować się w tej samej sieci
 
 ### Warto wiedzieć
 
