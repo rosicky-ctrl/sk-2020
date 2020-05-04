@@ -92,6 +92,10 @@ Efekt
 * Ustawienie adresów za pomocą ip addr add adres/maska dev eth0/1/..
 * Sprawdzenie połączenia za pomocą ping
 * PCty muszą znajdować się w tej samej sieci
+* vi /etc/network/interfaces - plik, w którym następuje edycja konifugracji
+* iface eth0 inet dhcp --> iface eth0 inet static
+
+Stosowane, aby nie ustawiać przy każdym ponownym włączeniu/awarii/braku prądu ponownie adresów, masek, połączeń etc.
 
 ### Warto wiedzieć
 
