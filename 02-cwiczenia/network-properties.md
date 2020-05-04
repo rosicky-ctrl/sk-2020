@@ -30,13 +30,13 @@ Weryfikacja połączenia
 
 Polecenie
 
-ip addr add 10.0.15.4/24 dev eth0 na pierwszej maszynie - ustawienie adresu IP i maski na PC1
-ip addr add 10.0.15.6/24 dev eth0 na drugiej maszynie - ustawienie adresu IP i maski na PC2
-ip addr show eth0 - pokazuje dane interfejsu
-apk add git python3 curl - zainstalowanie pakietu pozwalającego na korzystanie z githuba, pythona, curla
-git clone https://github.com/jkanclerz/client-server-chat - sklonowanie na PCty programów
-ping - najprostsza metoda sprawdzenia czy host po drugiej stronie odpowie, czy jest komunikacja, polaczenie miedzy dwiema maszynami
-python3 server.py / python3 client.py 9999 - odpalenie na jednym PC serwera, na drugim klienta z portem 9999
+* ip addr add 10.0.15.4/24 dev eth0 na pierwszej maszynie - ustawienie adresu IP i maski na PC1
+* ip addr add 10.0.15.6/24 dev eth0 na drugiej maszynie - ustawienie adresu IP i maski na PC2
+* ip addr show eth0 - pokazuje dane interfejsu
+* apk add git python3 curl - zainstalowanie pakietu pozwalającego na korzystanie z githuba, pythona, curla
+* git clone https://github.com/jkanclerz/client-server-chat - sklonowanie na PCty programów
+* ping - najprostsza metoda sprawdzenia czy host po drugiej stronie odpowie, czy jest komunikacja, polaczenie miedzy dwiema maszynami
+* python3 server.py / python3 client.py 9999 - odpalenie na jednym PC serwera, na drugim klienta z portem 9999
 
 Efekt
 PCty w tej samej sieci, ta sama maska, połączenie za pomocą ping i server-client działa.
