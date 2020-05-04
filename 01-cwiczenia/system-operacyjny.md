@@ -38,12 +38,12 @@
 | -------------             |:-------------:        | -----:                    |
 | nazwa                     | linux                 | centos 7                  |
 | cfg interfejsów           | centos 7 | /etc/sysconfig/network-scripts         |
-| program (parametry sieci) | niewiem               |                           |
+| program (parametry sieci) |             |                           |
 | ....                      | .....                 |                           |
 | nazwa                     | Alpine Linux          |                           |
-| Konfiguracja ip           | ``$ ip all ``         | show all eth interfaces   | 
-| Tablica routingu          | ``$ ip route show ``  | what is gateway?!         | 
-| check nameservers (DNS)   | ``$ cat /etc/resolv.conf ``  | which DNS were set | 
+| Konfiguracja ip           | ``$ ip all ``         |  pokazuje wszystkie interfejsy | 
+| Tablica routingu          | ``$ ip route show ``  | maszyna podłączona do sieci komputerowej, dzięki niej możliwe jest komunkowanie się z komputerami z innych sieci | 
+| check nameservers (DNS)   | ``$ cat /etc/resolv.conf ``  |  | 
 
 ### Konfiguracja połączenia sieciowego
 
@@ -51,7 +51,7 @@
 | ------------- |:-------------:| -----:|
 | Adres IP      | 10.0.2.15        | przydzielony przez DHCP |
 | Maska podsieci| 10.0.2.15/**24** | **255.255.255.0**    |
-| Brama         | 10.0.2.2         | default from route table |
+| Brama         | 10.0.2.2         | domyslny z tabeli routingu |
 | DNS 1         | 10.10.4.204      | cat /etc/resolv.conf     |
 | DNS 2         | 1.1.1.1          | nslookup uek.krakow.pl   |
 
