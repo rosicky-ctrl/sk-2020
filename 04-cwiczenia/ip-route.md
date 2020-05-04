@@ -12,8 +12,11 @@
 ### ip 
 | subcommand    |  polecenie   | opis  |
 | ------------- |:-------------| :---------------| 
-|   ``route``    |                               | |
-|               |   ``ip route add``             | |
+|       | ip route add default via 10.0.10.1 | wszystkie adresy ktorych nie zna zostana wyslane do routera via 10.0.10.1 |
+|               | ip route get 10.0.10.10 | droga jaką "pofrunie" routing dla 10.0.10.10 |
+|  | ip route add 10.0.10.0/24 via 172.16.100.1 | router który ma przyłączony eth1 10.0.10.1 bedzie wiedział co z tym zrobić, dodanie do tablicy routingu |
+|  |  ip route show  | tablica routingu |
+| sysctl net.ipv4.ip_forward=1 | echo 1 > /proc/sys/net/ipv4/ip_forward | włączenie tej opcji, pingi między pctami z dwóch oddzielnych sieci zaczęły przechodzić, flaga mówiąca o przekazywaniu pakietów między interfejsami |
 
 
 ### Zastosowania
