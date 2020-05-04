@@ -78,11 +78,11 @@ Weryfikacja połączenia
 Polecenie
 vi /etc/networks/interfaces - edytowanie statycznej konfiguracji
 
-``iface eth0 inet dhcp --> iface eth0 inet static`` zmiana z dhcp na statyczną konfigurację
-``address 192.168.10.10`` podajemy adres
-``netmask 255.255.255.0`` podajemy maske
-``hostname localhost``
-i np. reboot lub rc-service networking restart (przeładowanie sieci), komunikacja zadziała i zostanie utrwalona
+``iface eth0 inet dhcp --> iface eth0 inet static`` zmiana z dhcp na statyczną konfigurację <br>
+``address 192.168.10.10`` podajemy adres <br>
+``netmask 255.255.255.0`` podajemy maske <br>
+``hostname localhost`` <br>
+i np. reboot lub rc-service networking restart (przeładowanie sieci), komunikacja zadziała i zostanie utrwalona <br>
 
 Efekt
 
